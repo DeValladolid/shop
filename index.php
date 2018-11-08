@@ -84,6 +84,8 @@ $rarityid = json_decode($file, true);
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fortnite Item Shop</title>
+    <meta name="Description" content="Fortnite Battle Royale daily item shop.">
+    <meta name="Keywords" content="fortnite, fnbr, lazy links, ghoul trooper">
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="js/main.js" defer></script>
