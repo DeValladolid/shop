@@ -86,6 +86,11 @@ $rarityid = json_decode($file, true);
     <title>Fortnite Item Shop</title>
     <meta name="Description" content="Fortnite Battle Royale daily item shop.">
     <meta name="Keywords" content="fortnite, fnbr, lazy links, ghoul trooper">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@srdrabx">
+    <meta name="twitter:title" content="Fortnite item shop">
+    <meta name="twitter:description" content="Fortnite Battle Royale daily item shop.">
+    <meta name="twitter:image" content="http://fortnitemares.fortnite-br.com/css/bg.jpg">
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="js/main.js" defer></script>
