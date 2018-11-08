@@ -98,7 +98,7 @@ $rarityid = json_decode($file, true);
 </head>
 <body>
   <div class="title" style="text-align: center;"><h1>Fortnite Item Shop</h1></div>
-  <div class="title" style="text-align: center;"><h1>API data by fnbr.co<?php $date ?> </h1></div>
+  <div class="api" style="text-align: center;"><h1>API data by fnbr.co<?php $date ?> </h1></div>
 <div class="content__inner">
   <div class="items items--shop">
 

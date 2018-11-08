@@ -56,9 +56,14 @@ h4 {
   font-family: burbank-small
 }
 
-.api {
+.title {
   text-align: center;
   font-size: 4 em;
+}
+
+.api {
+  text-align: center;
+  font-size: 3 em;
 }
 
 
