@@ -94,6 +94,16 @@ $rarityid = json_decode($file, true);
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="js/main.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71246365-21"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-71246365-21');
+    </script>
+
 
 </head>
 <body>
