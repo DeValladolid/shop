@@ -95,6 +95,7 @@ $rarityid = json_decode($file, true);
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="js/main.js" defer></script>
+    <script type="text/javascript" src="js/timer.js" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71246365-21"></script>
     <script>
@@ -110,6 +111,7 @@ $rarityid = json_decode($file, true);
 <body>
   <div class="title" style="text-align: center;"><h1>Fortnite Item Shop</h1></div>
   <div class="api" style="text-align: center;"><h1>shop.lazylinks.fr | <?php echo date("Y-m-d") ?></h1></div>
+  <div class="title" style="text-align: center;"><h1>New Items<p id="demo"></p></h1></div>
 
 <div class="content__inner">
   <div class="items items--shop">
@@ -169,4 +171,50 @@ $rarityid = json_decode($file, true);
 <div class="api" style="text-align: center;"><h1>API data by fnbr.co<?php $date ?> </h1></div>
 
 </body>
+<script>
+var target = new Date("<?php echo "" . date("Y/m/d") . ""; ?> 19:00 EST");
+timeOffset = target.getTimezoneOffset() * 60000;
+targetTime = target.getTime();
+targetUTC = targetTime + timeOffset;
+
+var today = new Date();
+todayTime = today.getTime();
+todayUTC = todayTime + timeOffset;
+
+refreshTime = (targetUTC - todayUTC);
+if (refreshTime > 1) {
+  setTimeout(function() { window.location.reload(true); }, refreshTime);
+}
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("<?php echo "" . date("Y/m/d") . ""; ?> 19:00 EST").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = hours + ":"
+  + minutes + ":" + seconds + "";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </html>
