@@ -91,7 +91,7 @@ $rarityid = json_decode($file, true);
     <meta name="twitter:title" content="Fortnite item shop">
     <meta name="twitter:description" content="Fortnite Battle Royale daily item shop.">
     <meta name="today-date" content="<?php echo date("Y-m-d") ?>">
-    <meta name="twitter:image" content="http://fortnitemares.fortnite-br.com/css/bg.jpg">
+    <meta name="twitter:image" content="https://cdn2.unrealengine.com/Fortnite%2Fblog%2Ffortnite-teams-up-with-the-nfl%2FBR06_News_Thumbnail_1_1_NFL_Announce-576x576-6b5f30c1a714e34c22dd40cc93aedf6476a5d220.jpg">
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="js/main.js" defer></script>
