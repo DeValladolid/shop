@@ -1,3 +1,3 @@
 {
-   "date":"<?php echo date("Y-m-d") ?>",
+   "date":"<?php echo date("Y-m-d") ?>"
 }
