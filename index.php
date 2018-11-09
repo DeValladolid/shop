@@ -83,13 +83,14 @@ $rarityid = json_decode($file, true);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fortnite Item Shop</title>
+    <title>Fortnite Item Shop | <?php echo date("Y-m-d") ?></title>
     <meta name="Description" content="Fortnite Battle Royale daily item shop.">
     <meta name="Keywords" content="fortnite, fnbr, lazy links, ghoul trooper">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@srdrabx">
     <meta name="twitter:title" content="Fortnite item shop">
     <meta name="twitter:description" content="Fortnite Battle Royale daily item shop.">
+    <meta name="today-date" content="<?php echo date("Y-m-d") ?>">
     <meta name="twitter:image" content="http://fortnitemares.fortnite-br.com/css/bg.jpg">
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
